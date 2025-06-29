@@ -1,0 +1,8 @@
+alert("Javacript подключен");
+
+
+
+
+$( ".skills-item" ).click(function(){ 
+	    $( ".skill-text" ).fadeIn(); 
+	  });

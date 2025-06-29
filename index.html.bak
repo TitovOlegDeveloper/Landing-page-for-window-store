@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ваши окна</title> 
+		<meta charset="UTF-8">
+			<link rel="SHORTCUT ICON" href="image/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css.css" type="text/css">
+		<link rel="stylesheet" media="all" href="animate.css">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+		  <script type="text/javascript" src="skills.js"></script>
+		   <script type="text/javascript" src="wow.min.js"></script>
+		    <script src="slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	</head> 
+	<body>
+	<!-------------Описание объекта слайдера---->
+	
+		<div class="popup" id="popup">
+			<label class="close-m-popup" id="close-m-popup" onclick="MC()">X</label> 
+			<div class="popup-block" id="block-popup"> 
+							<p class="popup-name" id="popname"> </p>
+							<p class="popup-description" id="popdes">
+							
+							</p>
+						</div> 
+		</div> 
+
+
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="header-logo">Ваши окна</div> 
+				<div id="burger">
+				<span>____</span>
+				<span>____</span>
+				<span>____</span>
+				</div> 
+				<nav class="nav">
+					<div class="nav-inner">
+					<a  class="nav-link" href="#aboutus" id="a2">О нас</a>
+					<a href="#sliders" class="nav-link" id="a3">Каталог</a>
+					<a  class="nav-link" href="#contacts" id="a4">Контакты</a>
+					</div>
+				</nav>
+			</div> 
+		</div> 
+	</header> 
+	
+		<div class="intro" id="Intro">
+			<div class="container">
+				<div class="intro-inner">
+					<h2 class="intro-title2">Магазин окон и дверей в Казани</h2>
+					<h1 class="intro-title">Ваши окна</h1>
+					
+					<a href="#contacts" class="btn">Записаться на замер</a> 
+				</div> 
+				
+			
+			</div> 
+			
+		</div> <!-- intro end -->
+	
+		<section class="section" id="aboutus">
+			<div class="container"> 
+				<div class="section-header">
+					<!--<h3 class="section-suptitle">Что мы делаем</h3>-->
+					<h2 class="section-title">О нашей компании</h2>
+					<div class="section-text">
+					<p>Окна, двери, витражи и входные группы - любых 
+					размеров, форм, цветов и 
+					комплектации. От эконом до премиум 
+					класса по цене завода! Наши цены доступны всем – 
+					предлагаем от себя выезд на замер и установку по гарантии.</p>
+					</div>
+				</div>
+				<div class="about" id="About">
+					<div class="about-item">
+						<div class="about-img">
+							<img src="image/sec1.jpg" alt="">
+						</div>
+						<div class="about-text">Следим за новинками<br> в оконном бизнесе</div>
+					</div>
+					<div class="about-item">
+						<div class="about-img">
+							<img src="image/sec2.jpg" alt="">
+						</div>
+						<div class="about-text">Монтируем окна<br> с опытной <br>командой монтажников</div>
+						</div>
+					<div class="about-item">
+						<div class="about-img">
+								<img src="image/sec3.jpg" alt="">
+							</div>
+							<div class="about-text">Делаем замеры качественно <br>и на совесть</div>
+					</div>
+				</div>
+			</div> 
+		</section> 
+		
+		<div class="statistics">
+			<div class="container">
+				<div class="stat">
+						<div class="stat-item">
+							<div class="stat-num">7+</div>
+							<div class="stat-text">лет на рынке</div>
+						</div>
+						<div class="stat-item">
+							<div class="stat-num">1000+</div>
+							<div class="stat-text">Довольных заказчиков</div>
+						</div>
+						<div class="stat-item">
+							<div class="stat-num">3-5</div>
+							<div class="stat-text"> дней срок изготовления</div>
+						</div>
+						<div class="stat-item">
+							<div class="stat-num">10</div>
+							<div class="stat-text">лет гарантия на профиль</div>
+						</div>
+						
+					</div>
+				</div> 
+			</div> 
+			
+			<section class="section" id="sliders">
+			<div class="container"> 
+				<div class="section-header">
+					<!--<h3 class="section-suptitle">Что мы делаем</h3>-->
+					<h2 class="section-title">Каталог</h2>
+					<div class="section-text">
+					<p>Работаем с лучшими профильными системами.</p>
+					</div>
+				</div>
+					<div class="slider">
+						
+						<div class="single-item">
+						<p class="single-item-name">brusbox 70-6</p>
+						<img src="windows/brusbox-706.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description"  onclick=BRUSBOX706();>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">brusbox-aero</p>
+						<img src="windows/brusbox-aero.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=BRUSBOXAERO();>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">brusbox-superaero</p>
+						<img src="windows/brusbox-superaero.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=BRUSBOXSUPERAERO();>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">gealan-s3000</p>
+						<img src="windows/gealan-s3000.jpg">
+						<div class="single-item-block-description" onclick=GEALANS3000();>
+							<button class="single-item-description">Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">gealan-s8000-4</p>
+						<img src="windows/gealan-s8000-4.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=GEALANS80004();>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">gealan-s8000-6</p>
+						<img src="windows/gealan-s8000-6.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=GEALANS80006();>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">KBE MASTER</p>
+						<img src="windows/kbe master.jpg">
+						<div class="single-item-block-description" onclick=KBEMASTER();>
+							<button class="single-item-description">Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">ТП-65</p>
+						<img src="windows/tp-65.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=TP65();>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">ТП-45</p>
+						<img src="windows/tpt-45-2.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=TP45()>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">ЖАЛЮЗИ</p>
+						<img src="windows/zaluzi.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=ZALUZI()>Описание</button> 
+						</div>
+						</div>
+						
+						<div class="single-item">
+						<p class="single-item-name">ОКНА ПВХ ГРУППЫ ЛАМИНАЦИЯ</p>
+						<img src="windows/pvh.jpg">
+						<div class="single-item-block-description">
+							<button class="single-item-description" onclick=PVH()>Описание</button> 
+						</div>
+						</div>
+					</div>
+			</div> 
+		</section> 
+		
+			<section class="section">
+				<div class="container">
+					<div class="section-header">
+					<h2 class="section-title">Наши преимущества</h2>	
+					<div class="section-text">
+					
+					</div>					
+				</div>
+				<div class="main-skills">
+					<div class="skills fadeInLeft wow">
+						<div class="skills-item" id="i1">
+							<div class="skill-icon">
+								<img src="image/3.png" alt="" class="skill-img">
+							</div>
+							<div class="skill-title">
+							Гарантия
+							</div> 
+							<div class="skill-text" id="s1">
+							На все оконные конструкции 
+							распространяются гарантийные обязательства
+							производителя, проверенного временем!
+							</div>
+						</div>
+						<div class="skills-item" id="i2">
+						<div class="skill-icon">
+								<img src="image/2.png" alt="" class="skill-img">
+							</div>
+							<div class="skill-title">
+							Опытные монтажники
+							</div> 
+							<div class="skill-text" id="s2">
+							Монтаж конструкций осуществляется бригадами, с многолетним стажем работы, 
+							регулярно повышающими уровень профессионализма что отражается на качестве!
+							</div>
+						</div>
+						<div class="skills-item" id="i3">
+						<div class="skill-icon">
+								<img src="image/1.png" alt="" class="skill-img">
+							</div>
+							<div class="skill-title">
+							Простая оплата
+							</div> 
+							<div class="skill-text" id="s3">
+							У нас вы можете осуществить 
+							оплату наличными, картой 
+							любого банка или через расчетный счет вашей организации!
+							</div>
+						</div>
+					</div> 
+					
+					<div class="skills fadeInRight wow">
+						<div class="skills-item" id="i4">
+							<div class="skill-icon">
+								<img src="image/4.png" alt="" class="skill-img">
+							</div>
+							<div class="skill-title">
+							Всегда на связи
+							</div> 
+							<div class="skill-text" id="s4">
+							Мы поддерживаем связь с нашими клиентами на каждом 
+							этапе работы, и после ее окончания!
+							</div>
+						</div>
+						<div class="skills-item" id="i5">
+						<div class="skill-icon">
+								<img src="image/6.png" alt="" class="skill-img">
+							</div>
+							<div class="skill-title">
+							Рассрочка
+							</div> 
+							<div class="skill-text" id="s5">
+							При необходимости вы можете установить 
+							окна в рассрочку без 
+							переплаты до 6 месяцев, или оформить ее через банк 
+							до 36 месяцев!
+							</div>
+						</div>
+						<div class="skills-item" id="i6">
+						<div class="skill-icon">
+								<img src="image/5.png" alt="" class="skill-img">
+							</div>
+							<div class="skill-title">
+							Акции
+							</div> 
+							<div class="skill-text" id="s6">
+							Для вас мы стараемся проводить 
+							выгодные акции, делать скидки и 
+							дарить ПОДАРКИ!
+							</div>
+						</div>
+					</div> 
+					</div>
+			</section>
+			
+			
+				<section class="section" id="contacts">
+			<div class="container"> 
+				<div class="section-header">
+					<!--<h3 class="section-suptitle">Что мы делаем</h3>-->
+					<h2 class="section-title">Контакты</h2>
+				</div>
+				<div class="contacts-inner">
+					<div class="office">
+						<p class="office-address">Мы находимся по адресу: <br> г. Казань, ул. Восстания, д. 102а, 2 этаж, офис 215 <br>ПН-СБ: 10:00 - 18:00</p>
+						<p class="office-phone">Проконсультироваться и записаться на бесплатный замер: <u>+79600545280</u> <br> <span>(По номеру доступен наш WhatsApp/Direct)</span></p> 
+						<div class="socnet">
+							<a href="https://vk.com/id627779743" target="_blank"><img src="socnet/vk.png" title="ВАШИ ОКНА в Вконтакте"></a>
+							<a href="https://instagram.com/kzn_okna_dveri?igshid=YmMyMTA2M2Y=" target="_blank"><img src="socnet/inst.png" title="ВАШИ ОКНА в Instagram"></a>
+							<img src="socnet/tg.png" title="ВАШИ ОКНА в Telegram">
+						</div>
+					</div> 
+					<div class="contacts-picture">
+						<img src="image/logo.png">
+					</div> 
+				</div> 
+			</div> 
+		</section> 
+		
+		
+			<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4481.4405587786805!2d49.04332065544927!3d55.83281429999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415952ec3e8fd1c5%3A0xe64a9b439daf88d4!2z0JLQkNCo0Jgg0J7QmtCd0JA!5e0!3m2!1sru!2sru!4v1655487091941!5m2!1sru!2sru"
+					width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div> 
+		
+			
+		
+			<div class="footer">
+				<div class="container">
+					<div class="rights"> 
+					<div class="footer_p_rights">
+					<p class="element_rights">Авторские права © 2022 Все права защищены - ВАШИ ОКНА</p>
+					<p class="element_rights master">Создано <strong>Lairnan</strong></p>
+					</div>
+				</div> 
+				</div> 
+			</div> 
+	
+			
+			
+			
+			<script>
+			
+			/*Вызываем слайдер*/
+			 
+			   
+			 
+			  $('.slider').slick({
+	infinite: true,
+	dots: true,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+	    {
+	      breakpoint: 1100,
+	      settings: {
+	        slidesToShow: 2,
+			arrows:false,
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 1,
+			arrows:false,
+	      }
+	    }
+    ]
+});
+			/*Функция для работы с анимацией*/
+			new WOW().init();
+			
+						
+						
+	if(document.documentElement.clientWidth < 900) {			
+	/*Функция для открытия и закрытия преимуществ*/
+  $("#i1").click(function(){
+  $(".skill-title").css("margin-bottom","0");
+   $(".skill-title").css("border-radius","0");
+     $(".skill-text").css("border-radius","0");
+    $("#s1").toggle("slow");
+  });
+  
+   $("#i2").click(function(){
+  $(".skill-title").css("margin-bottom","0");
+   $(".skill-title").css("border-radius","0");
+     $(".skill-text").css("border-radius","0");
+    $("#s2").toggle("slow");
+  });
+  
+   $("#i3").click(function(){
+  $(".skill-title").css("margin-bottom","0");
+   $(".skill-title").css("border-radius","0");
+     $(".skill-text").css("border-radius","0");
+    $("#s3").toggle("slow");
+  });
+  
+   $("#i4").click(function(){
+  $(".skill-title").css("margin-bottom","0");
+   $(".skill-title").css("border-radius","0");
+     $(".skill-text").css("border-radius","0");
+    $("#s4").toggle("slow");
+  });
+  
+   $("#i5").click(function(){
+  $(".skill-title").css("margin-bottom","0");
+   $(".skill-title").css("border-radius","0");
+     $(".skill-text").css("border-radius","0");
+    $("#s5").toggle("slow");
+  });
+  
+   $("#i6").click(function(){
+  $(".skill-title").css("margin-bottom","0");
+   $(".skill-title").css("border-radius","0");
+     $(".skill-text").css("border-radius","0");
+    $("#s6").toggle("slow");
+  });
+}
+
+
+
+ 
+ if(document.documentElement.clientWidth < 780) {	
+	/*Функция для открытия мобильного меню*/
+	$("#burger").click(function(){
+    $(".nav").css({
+	"backgroundColor":"rgb(218,165,32)",
+	"font-weight":"700",
+	"width":"100vw",
+	"height":"100%",
+	"position":"fixed",
+	"top":"0",
+	"zIndex":"1",
+	"display":"column",
+	}).slideToggle("normal");
+	
+	$("#burger").css({
+		"zIndex":"2",
+		"position":"fixed",
+		"right":"0",
+		"color":"gray",
+	});
+		$(".nav-inner").css({
+		"display":"flex",
+		"flex-direction":"column",
+		"font-size":"20px",
+		"zIndex":"1",
+		"backgroundColor":"rgb(218,165,32)",
+		"margin-top":"20vh",
+		"align-items":"center",
+	});
+		$(".nav-link").css({
+		"margin-bottom":"15px",
+	});
+  });
+ }
+ 	
+ 
+  
+ 
+ 
+ 
+  if(document.documentElement.clientWidth < 780) {
+	
+	$("#a2").click(function(){
+    $(".nav").css({
+	"backgroundColor":"rgb(218,165,32)",
+	"font-weight":"700",
+	"width":"100vw",
+	"height":"100%",
+	"position":"fixed",
+	"top":"0",
+	"zIndex":"1",
+	"display":"column",
+	}).fadeToggle("normal");
+  });
+  
+  $("#a3").click(function(){
+    $(".nav").css({
+	"backgroundColor":"rgb(218,165,32)",
+	"font-weight":"700",
+	"width":"100vw",
+	"height":"100%",
+	"position":"fixed",
+	"top":"0",
+	"zIndex":"1",
+	"display":"column",
+	}).fadeToggle("normal");
+  });
+  
+  $("#a4").click(function(){
+    $(".nav").css({
+	"backgroundColor":"rgb(218,165,32)",
+	"font-weight":"700",
+	"width":"100vw",
+	"height":"100%",
+	"position":"fixed",
+	"top":"0",
+	"zIndex":"1",
+	"display":"column",
+	}).fadeToggle("normal");
+  });
+  }
+  
+  /*Описание из каталога*/
+  
+  /*BRUSBOX 70-6*/
+	function BRUSBOX706(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = " BRUSBOX 70-6";
+	popdes.textContent = "Система BRUSBOX 70-6 — новейшее достижение в разработке энергосберегающих профильных систем от компании «БРУСБОКС». Высокотехнологичные системы данной серии имеют увеличенную монтажную глубину — 70мм и максимально возможное для данной глубины количество камер – 6, благодаря чему система BRUSBOX 70-6 обеспечивает высокие показатели тепло- и звукоизоляции оконных конструкций и является лидером в премиум-сегменте оконных профилей. Этот высококачественный морозостойкий профиль предназначен для строительства элитного жилья и коттеджей, а также является идеальным решением для использования в самых северных регионах, наиболее требовательных в вопросах теплосбережения. Благодаря совокупности повышенных энергосберегающих свойств, высокого качества исполнения и элегантного внешнего вида, система BRUSBOX 70-6 способна удовлетворить запросы даже самых притязательных потребителей. Технические особенности профилей системы «BRUSBOX 70-6»: конструктивная ширина — 70 мм, количество камер — 6 шт, толщина лицевых стенок — 3 мм, максимальная толщины заполнения — 40 мм, сопротивление теплопередаче — 1,02 м2С/Вт (без армирования).";
+		}
+		
+	/*BRUSBOX-AERO*/
+		
+		function BRUSBOXAERO(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "BRUSBOX AERO";
+	popdes.textContent = "BRUSBOX AERO — наиболее востребованная система профилей в сегменте как корпоративного, так и частного строительства за счет оптимального соотношения ее цены и качества. Система имеет 3-х камерное строение и монтажную глубину 60 мм, что позволяет устанавливать в оконные конструкции стеклопакеты толщиной до 32 мм. BRUSBOX AERO полностью соответствует требованиям государственных стандартов , что делает ее незаменимой в случаях, когда цена является основополагающим фактором при выборе системы, способной удовлетворить спрос широкого круга потребителей. Применение профилей системы BRUSBOX AERO позволяет потребителям экономно расходовать бюджет, не опасаясь при этом за сохранение визуальных и эксплуатационных характеристик готовых конструкций на высоком уровне! Технические особенности профилей системы «BRUSBOX AERO»: конструктивная ширина — 60 мм, количество камер — 3 шт, толщина лицевых стенок — 2.5 мм, максимальная толщина заполнения — 32 мм, сопротивление теплопередаче — 0,82 м2С/Вт (без армирования).";
+		}
+		
+		/*BRUSBOX-SUPERAERO*/
+		
+		function BRUSBOXSUPERAERO(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "BRUSBOX-SUPERAERO";
+	popdes.textContent = "BRUSBOX SUPER AERO – 5-ти камерная система профилей с монтажной глубиной 70 мм, успешно вошедшая на рынок в 2012 году и ставшая одной из самых актуальных и востребованных систем в линейке профилей BRUSBOX . Создание системы BRUSBOX SUPER AERO обусловлено укореняющимися тенденциями на оконном рынке, а именно: увеличением ширины профильных систем в связи с ужесточением требований, предъявляемых потребителями, к показателям теплоизоляции конструкций с одной стороны и необходимостью увеличения конкурентноспособности конструкций за счет приемлемой цены с другой стороны. Использование данной серии профильных систем – идеальное решение для тех, кто делает выбор, основываясь на рациональном подходе, позволяющем достойно оценить оптимальное сочетание высоких показателей энергоэффективности окон из профиля SUPER AERO и их доступной цены. Исходя из требований рынка и наших партнеров, компания «БРУСБОКС» в 2018 году начала запуск профильной системы BRUSBOX SUPER AERO с видоизмененной створкой и коробкой, а так же добавила в свой ассортимент новую Створку 77 и Штапик 15 круглый. Технические особенности профилей системы «BRUSBOX SUPER AERO»: конструктивная ширина — 70 мм, количество камер — 5 шт, толщина лицевых стенок — 2.5 мм, максимальная толщины заполнения — 40 мм, сопротивление теплопередаче — 0.97 м2С/Вт (без армирования).";
+		}
+		
+		/*GEALAN-S3000*/
+		
+		function GEALANS3000(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "GEALAN-S3000";
+	popdes.textContent = "Универсальная система профилей S 3000 с монтажной шириной 62 мм является очень рациональной системой с точки зрения обработки профилей на производстве. Детально это означает: Универсальное стальное армирование для рамы и створки; одинаковые сверлильные отверстия под соединители импоста и перекладин, а также под крепёжные дюбеля; универсальная фреза для импоста и перекладин; универсальная зачистная фреза для рамы и створки. Особенностью системы S 3000 является дизайнерская профильная система, акцентом которой является многообразие решений для остекления жилых квартир и домов. Специальные варианты створок с узкой лицевой частью либо с закруглёнными кантами позволяют создавать филигранные окна - особенно в штульповом исполнении. ПРЕИМУЩЕСТВА СИСТЕМЫ S 3000: штапики с коэкструдированным уплотнением обеспечивают лёгкую замену, возможно использование стеклопакетов шириной до 33 мм в плоскосмещённых и до 49 мм в плоскосовмещённых створках для оптимальных звукоизоляционных характеристик, конструктивно продуманная фальцевая поверхность профиля с лёгким уклоном и большой камерой для водоотвода обеспечивает оптимальный водоотвод через наклонную часть, а также надёжное крепление головки рамных дюбелей, легка в уходе, надёжное крепление элементов фурнитуры через несколько стенок и перегородок ПВХ-профиля Большое количество дополнительных профилей, оптимальные возможности использования различных соединительных профилей, расширителей, внешних усилителей и фасадных элементов, уникальный соединитель импоста со специальными крепёжными элементами обеспечивает надёжность и долговечность соединения.";
+		}
+		
+		function GEALANS80004(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "GEALAN-S8000-4 (4 камеры)";
+	popdes.textContent = "Благодаря специально разработанной конструкции оконной рамы окно имеет больший световой проем. Тем самым в Ваш дом проникает больше света, преображая внутреннее пространство. Монтажная глубина 74 мм системы улучшает теплоизоляционные характеристики окна по сравнению с более узкими системами. Это позволяет Вам экономить на отоплении зимой и кондиционировании летом. Благодаря более широкому стеклопакету увеличивается расстояние между стеклами, что делает окно теплее и существенно улучшает звукоизоляцию. Технологические особенности: Монтажная ширина - 74 мм, количество камер в створке - 4, количество камер в раме и импосте - 3, толщина стеклопакета - до 46мм, контуры уплотнения - 2, коэффициент теплоизоляции Ro - до 0,71 м2*С/ВТ";
+	}
+		
+		function GEALANS80006(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "GEALAN-S8000-6 (6 камер)";
+	popdes.textContent ="Профильная система GEALAN S 8000 (6 камер), является следующим шагом развития инновационной линейки профильных систем GEALAN. Основное внимание при создании системы, уделялось повышению технических характеристик, связанных с тепло- и звукоизоляцией. Одной из особенностей системы, является возможность комбинирования всех инновационных технологий GEALAN для создания действительно, индивидуального окна, отвечающего самым высоким требованиям. Система S8000 10 имеет профили в 6-ти камерном исполнении. Конструктив позволяет использовать замкнутое стальное армирование большого размера, благодаря чему достигается отличная стабильность и прочность, соответствующая требованиям строительных объектов, где используются большие оконные конструкции. Наличие большого числа камер и расположение их внутри профиля обуславливает повышенное сопротивление теплопередаче и повышает показатели звукоизоляции. Большая фальцевая поверхность профиля обеспечивает лёгкий уход. Технологические особенности: монтажная ширина - 74 мм, количество камер - 6, толщина стеклопакета - до 46мм, контуры уплотнения - 2, коэффициент теплоизоляции Ro - до 0,89 м2*С/ВТ";
+	}
+	
+	function KBEMASTER(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "KBE MASTER";
+	popdes.textContent ="Разработанная специально для Российского рынка система KBE_Master обладает отличной тепло- и шумоизоляцией. Соотношение демократичной цены и высокого качества делает эту профильную систему уникальной. KBE Master – окна, достойные мастера! Благодаря максимальной ширине стеклопакета до 44 мм, окна КВЕ Master обладают повышенным уровнем теплоизоляции, что позволяет сохранить тепло в доме и сэкономить на отоплении. Надежная защита от непрошеных гостей благодаря конструктивным особенностям (фурнитурный паз 13 мм) и возможности установки противовзломной фурнитуры. Благодаря повышенной герметичности окон из профиля KBE_Master, в Вашем доме будут тишина и спокойствие, даже если за окном оживленная магистраль или стройка. Характеристики: монтажная ширина - 70 мм, максимальная толщина стеклопакета - 44 мм, количество камер - рама 4 / створка 4 / импост 3, морозостойкость - до -60°С, максимальный размер створки окна - 125 см х 125 см, максимальный размер створки балконные двери - 90 см х 235 см, удаление фурнитурного паза - 13 мм, сопротивление теплопередаче, м2°С/Вт - 0,80, ударная вязкость, кДж/м2 - 39,5, герметичность контуров уплотнения - соответствуют классу А Долговечность (условных лет) - более 40 лет, цвет уплотнителя в стандартном исполнении - черный, экологичность greenline (без свинца!)";
+	}
+	
+	function TP65(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "ТП-65";
+	popdes.textContent ="Настоящая серия разработана для создания входных групп, витражей, навесных фасадов, оконных блоков, дверей в соответствии со СП 128.13330 «Алюминиевые конструкции», ГОСТ 22233-20018 «Профили прессованные из алюминиевых сплавов для светопрозрачных ограждающих конструкций», «Двери из алюминиевых сплавов для общественных зданий», ГОСТ 21519-2003 «Блоки оконные из алюминиевых сплавов», ГОСТ 23747-2015 «Двери из алюминиевых сплавов». Типовые узлы витражей, дверей, окон разработаны на основе алюминиевых прессованных профилей «65» серии системы «ТАТПРОФ». Технические характеристики: «глубина» профиля равна 65мм, толщина заполнения от 24 до 44мм, ширина термомоста: в окнах – 27мм; в дверях – 20мм, три варианта рамы, импоста и створок по несущим характеристикам, фурнитурный паз Европаз V.01, три контура уплотнения створк, приведенное сопротивление теплопередаче – 0,63 м2*С/Вт.";
+	}
+	
+	function TP45(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "ТП-45";
+	popdes.textContent ="Типовые узлы витражей, дверей и окон разработаны на основе алюминиевых прессованных профилей 45 серии архитектурной системы «ТАТПРОФ», Серия 45, без терморазрыва, — наиболее технологически передовая сборка изделий с использованием современных угловых и Т-образных соединителей. С их помощью угол конструкции собирают винтами и углообжимным станком. Т-образное соединение профилей производится поворотом фиксаторов в соединителях. Оконная серия 45 имеет базовый размер 45 мм для рамы и 53 мм для створки. Базовые профили серии подразделяются на три типоразмера по высоте: 25 мм, 36 мм и 52 мм.";
+	}
+	
+	function ZALUZI(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "ЖАЛЮЗИ: РУЛОННЫЕ, ВЕРТИКАЛЬНЫЕ, ГОРИЗОНТАЛЬНЫЕ.";
+	popdes.textContent ="Рулонные шторы – это защитное изделие для окон, которое совместило в себе практичность и декоративность. Специалисты называют их светофильтрами. Для производства таких штор используют специальную ткань. Она обладает рядом полезных качеств: преображение потока солнечного света (поглощение, рассеивание, отталкивание); антистатическое свойство; пыль не оседает; не выгорает и не линяет. Функциональная часть шторы – это гладкое полотно плотной структуры, которое можно сворачивать и разворачивать в рулон. Особенностью использования является то, что штора крепится только к определённому стеклу.";
+	}
+	
+	
+	function PVH(){
+			var popup = document.getElementById("popup");	
+			var popname = document.getElementById("popname");
+			var popdes = document.getElementById("popdes");
+	popup.style.visibility = "visible";
+	popup.style.overflow = "auto";
+	popname.textContent = "ОКНА ПВХ ВХОДНЫЕ ГРУППЫ ЛАМИНАЦИЯ.";
+	popdes.textContent ="Основные требования к окнам, которые должны соблюдаться при их проектировании и конструировании, – пропускать свет в помещения в соответствии с требующейся степенью их освещенности. Окна являются наружным ограждением; следовательно, при их конструировании необходимо учитывать те же требования, которые предъявляются к наружным стенам, т.е. теплозащитные качества, воздухопроницаемость (продувание) т.п.";
+	}
+	
+		function MC(){
+	var popup = document.getElementById("popup");	
+	popup.style.visibility = "hidden";
+	}
+
+	  </script>
+	
+	</body> 
+</html> 
